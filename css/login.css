@@ -1,0 +1,104 @@
+.total{
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+    background-color:  #f5f5f5;
+    position: relative;
+}
+.total .login{
+    width: 410px;
+    height: 500px;
+    position: absolute;
+    top:100px;
+    right: 250px;
+    background-color: #fff;
+}
+.total .login .title{
+    width: 100%;
+    height: 83px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 83px;
+}
+.total .login .title a{
+    color: #666;
+    text-decoration: none;
+}
+.total .login .title .line{
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    background-color: #e0e0e0;
+    margin:-2px 42px;
+}
+#zh{
+    color: #ff6700;
+}
+/* 增加hover的权重，否则经过JS修改后，样式不起效果 */
+.total .login .title a:hover {
+    color: #ff6700 !important;
+}
+.total .login .info{
+    width: 348px;
+    height: 417px;
+}
+.total .login .info input{
+    height: 48px;
+    width: 344px;
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    color: rgb(165, 164, 164);
+    margin-bottom: 20px;
+    outline-color: #ff6700;
+}
+#submit{
+    width: 346px;
+    background-color: #ff6700;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #f38d49;
+}
+#info1,#info2{
+    height: 40px;
+    line-height: 40px;
+    width: 300px;
+    margin: 0px auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #ff6700;
+    border:1px solid #ff6700;
+    background-color: #fff;
+    display: none;
+}
+.total .login .info .regnow{
+    width: 100%;
+    height: 38px;
+    color: rgb(165, 164, 164);
+}
+.total .login .info .regnow a{
+    color: rgb(165, 164, 164);
+    font-size: 18px;
+    text-decoration: none;
+}
+.total .login .info .regnow a:hover{
+    color: #ff6700;
+}
+.total .login .info3{
+    width: 348px;
+    height: 416px;
+    padding-top: 1px;
+    display: none;
+}
+.total .login .info3 .p{
+    color:  rgb(165, 164, 164);
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.total .login .info3 .img{
+    width: 180px;
+    height: 180px;
+}

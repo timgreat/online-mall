@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">    
+    <!-- 引入图标 -->
+    <link rel="shortcut icon" href="home1.ico" type="image/x-icon">
+    <title>在线商城</title>
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="pagetop">
+        <div class="container">
+            <div class="topleft">
+                <a href="javascript:;">商城</a>
+                <span>|</span>
+                <a href="javascript:;" class="download">
+                    下载APP
+                    <div class="downbox"><img src="img/二维码图片.jpg" alt=""><i>商城APP</i></div>
+                </a>
+            </div>
+            <div class="topright">
+                <div class="carbox">
+                    <a href="shopping.html" class="title">
+                        <i class="iconfont icon-gouwuchekong"></i>
+                        购物车
+                    </a>
+                    <div class="pop">
+                        <p class="nogoods">购物车中没有商品！</p>
+                    </div>
+                </div>
+                <div class="login">
+                    <a href="javascript:;" id="user" ></a>
+                    <a href="login.html" id="log">登录</a>
+                    <a href="register.html" id="reg">注册</a>
+                    <a href="javascript:;" id="information">消息通知</a>
+                    <a href="" id="tui" onclick="tuichu()">退出</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- 导航条 -->
+    <div class="pagenav">
+        <div class="container">
+            <a href="" class="logo"></a>
+            <ul class="nav">
+                <li class="navitem" id="showgoods">
+                    <a href="index.html" class="title" >商品首页</a>
+                </li>
+                <li class="navitem">
+                    <a href="#phone" class="title">手机</a>
+                    <div class="pop">
+                        <ul class="showgoods container">
+                            <li class="goods">
+                                <a href="#phone" class="picture"><img src="img/小手机.webp" alt=""></a>
+                                <h3 class="name">手机</h3>
+                                <p class="price">1999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#phone" class="picture"><img src="img/小手机.webp" alt=""></a>
+                                <h3 class="name">手机</h3>
+                                <p class="price">1999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#phone" class="picture"><img src="img/小手机.webp" alt=""></a>
+                                <h3 class="name">手机</h3>
+                                <p class="price">1999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#phone" class="picture"><img src="img/小手机.webp" alt=""></a>
+                                <h3 class="name">手机</h3>
+                                <p class="price">1999元</p>
+                            </li>
+                            <li class="goods">
+                                <a href="#phone" class="picture"><img src="img/小手机.webp" alt=""></a>
+                                <h3 class="name">手机</h3>
+                                <p class="price">1999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#phone" class="picture"><img src="img/小手机.webp" alt=""></a>
+                                <h3 class="name">手机</h3>
+                                <p class="price">1999元</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem">
+                    <a href="#jiadian" class="title">笔记本</a>
+                    <div class="pop">
+                        <ul class="showgoods container">
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/笔记本.webp" alt=""></a>
+                                <h3 class="name">笔记本</h3>
+                                <p class="price">5999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/笔记本.webp" alt=""></a>
+                                <h3 class="name">笔记本</h3>
+                                <p class="price">5999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/笔记本.webp" alt=""></a>
+                                <h3 class="name">笔记本</h3>
+                                <p class="price">5999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/笔记本.webp" alt=""></a>
+                                <h3 class="name">笔记本</h3>
+                                <p class="price">5999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/笔记本.webp" alt=""></a>
+                                <h3 class="name">笔记本</h3>
+                                <p class="price">5999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/笔记本.webp" alt=""></a>
+                                <h3 class="name">笔记本</h3>
+                                <p class="price">5999元</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem">
+                    <a href="#jiadian" class="title">家电</a>
+                    <div class="pop">
+                        <ul class="showgoods container">
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/电视.webp" alt=""></a>
+                                <h3 class="name">电视</h3>
+                                <p class="price">2999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/电视.webp" alt=""></a>
+                                <h3 class="name">电视</h3>
+                                <p class="price">2999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/电视.webp" alt=""></a>
+                                <h3 class="name">电视</h3>
+                                <p class="price">2999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/空调.webp" alt=""></a>
+                                <h3 class="name">空调</h3>
+                                <p class="price">2999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/空调.webp" alt=""></a>
+                                <h3 class="name">空调</h3>
+                                <p class="price">3999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#jiadian" class="picture"><img src="img/空调.webp" alt=""></a>
+                                <h3 class="name">空调</h3>
+                                <p class="price">3999元</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem">
+                    <a href="#zhineng" class="title">智能</a>
+                    <div class="pop">
+                        <ul class="showgoods container">
+                            <li class="goods">
+                                <a href="#zhineng" class="picture"><img src="img/音响.webp" alt=""></a>
+                                <h3 class="name">音响</h3>
+                                <p class="price">999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#zhineng" class="picture"><img src="img/音响.webp" alt=""></a>
+                                <h3 class="name">音响</h3>
+                                <p class="price">999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#zhineng" class="picture"><img src="img/音响.webp" alt=""></a>
+                                <h3 class="name">音响</h3>
+                                <p class="price">999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#zhineng" class="picture"><img src="img/路由器.webp" alt=""></a>
+                                <h3 class="name">路由器</h3>
+                                <p class="price">999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#zhineng" class="picture"><img src="img/路由器.webp" alt=""></a>
+                                <h3 class="name">路由器</h3>
+                                <p class="price">999元</p>
+                                <i></i>
+                            </li>
+                            <li class="goods">
+                                <a href="#zhineng" class="picture"><img src="img/路由器.webp" alt=""></a>
+                                <h3 class="name">路由器</h3>
+                                <p class="price">999元</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="search">
+                <form action="javascript:;" method="post" >
+                    <input type="text" class="q" id="q" onfocus="displayHot()" onblur="hiddenHot()">
+                    <input type="submit" id="submit" class="btn iconfont" value="&#xe60a;">
+                </form>
+                <ul id="hot" >
+                    <li><a href="#phone" >手机</a></li>
+                    <li><a href="#jiadian" >家电</a></li>
+                    <li><a href="#zhineng" >智能</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播区  -->
+    <div class="indexbanner container">
+         <ul class="bannerlist">
+             <li id="p1"><img src="img/轮播1.jpg" alt=""><a href="#jiadian"></a></li>
+             <li id="p2"><img src="img/轮播2.jpg" alt=""><a href="#phone"></a></li>
+             <li id="p3"><img src="img/轮播3.jpg" alt=""><a href="#phone"></a></li>
+             <li id="p4"><img src="img/轮播4.jpg" alt=""><a href="#jiadian"></a></li>
+         </ul>
+         <div class="btn prev" onclick="prevpic()"><a href="javascript:;"><i class="iconfont">&#xe602;</i></a></div>
+         <div class="btn next" onclick="nextpic()"><a href="javascript:;"><i class="iconfont">&nbsp;&#xe65a;</i></a></div>
+         <div class="page">
+             <a href="javascript:;" onclick="changepic(1)"><span>1</span></a>
+             <a href="javascript:;" onclick="changepic(2)"><span>2</span></a>
+             <a href="javascript:;" onclick="changepic(3)"><span>3</span></a>
+             <a href="javascript:;" onclick="changepic(4)"><span>4</span></a>
+         </div>
+    </div>
+    <script src="js/changeimg.js"></script>
+    <!-- 热点服务 -->
+    <div class="menus container">
+        <ul class="menu">
+            <li ><a href="#flashshopping"><i class="iconfont icon-shizhong"></i><span>秒杀</span></a></li>
+            <li ><a href="javascript:;"><i class="iconfont icon-qiye"></i><span>团购</span></a></li>
+            <li ><a href="javascript:;"><i class="iconfont icon-dianhuaka"></i><span>电话卡</span></a></li>
+            <li ><a href="javascript:;"><i class="iconfont icon-old_to_new"></i><span>以旧换新</span></a></li>
+            <li><a href="javascript:;"><i class="iconfont icon-chonghuafei"></i><span>话费充值</span></a></li>
+        </ul>
+    </div>
+    <!-- 商品展示 -->
+    <div class="allgoods">
+        <div class="title container">抢购区
+            <div class="prev"><a href="javascript:;"><i class="iconfont icon-xiangzuo"></i></a></div>
+            <div class="next"><a href="javascript:;"><i class="iconfont icon-xiangyou"></i></a></div>
+        </div>
+        <!-- 抢购区 -->
+        <div class="flashshopping container" id="flashshopping">
+            <ul class="goods">
+                <li class="time">
+                        <h3 class="title">00:00场</h3>
+                        <img src="img/shan.PNG" alt="">
+                    <div class="runtime">
+                        <span id="hour">1</span>
+                        <span class="point">:</span>
+                        <span id="minute">2</span>
+                        <span class="point">:</span>
+                        <span id="second">3</span>
+                      </div>
+                </li>
+                <li class="good1">
+                    <a href=""><img src="img/gra.webp" alt="">
+                        <h3 class="name">眼镜</h3>
+                        <p class="price">价格：100</p>
+                    </a>
+                </li>
+                <li class="good2">
+                    <a href=""><img src="img/gra.webp" alt="">
+                        <h3 class="name">眼镜</h3>
+                        <p class="price">价格：100</p>
+                    </a>
+                </li>
+                <li class="good3">
+                    <a href=""><img src="img/gra.webp" alt="">
+                        <h3 class="name">眼镜</h3>
+                        <p class="price">价格：100</p>
+                    </a>
+                </li>
+                <li class="good4">
+                    <a href=""><img src="img/gra.webp" alt="">
+                        <h3 class="name">眼镜</h3>
+                        <p class="price">价格：100</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 广告 -->
+        <div class="ads container"><a href="javascript:;"><img src="img/广告招租.jpg" alt=""></a></div>
+        <div class="title container" id="phone">手机
+            <div class="more"><a href="javascript:;"><i class="iconfont">查看更多&#xe65a;</i></a></div>
+        </div>
+        <!-- 手机区 -->
+        <div class="phone container">
+            <a href=""><img src="./img/first.jpg" alt="" class="firstphone"></a>
+            <ul class="phones display">
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlephone">
+                    <a href=""><img src="img/大手机.webp" alt="">
+                        <h3 class="name">手机</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 广告 -->
+        <div class="ads container"><a href="javascript:;"><img src="img/广告招租.jpg" alt=""></a></div>
+        <div class="title container" id="jiadian">家电
+            <div class="more"><a href=""><i class="iconfont">查看更多&#xe65a;</i></a></div>
+        </div>
+        <!-- 家电区 -->
+        <div class="jiadian container">
+            <ul class="jiadians display">
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：2000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+                <li class="singlejd">
+                    <a href=""><img src="img/家电.webp" alt="">
+                        <h3 class="name">电视</h3>
+                        <p class="price">价格：5000</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+         <!-- 广告 -->
+         <div class="ads container"><a href="javascript:;"><img src="img/广告招租.jpg" alt=""></a></div>
+         <div class="title container" id="zhineng">智能
+             <div class="more"><a href=""><i class="iconfont">查看更多&#xe65a;</i></a></div>
+         </div>
+         <!-- 智能区 -->
+        <div class="zhineng container">
+            <ul class="zhinengs display">
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+                <li class="singlezn">
+                    <a href=""><img src="img/智能.webp" alt="">
+                        <h3 class="name">音响</h3>
+                        <p class="price">价格：1000</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- 页面底部 -->
+<div class="bottom">
+    <div class="container">
+        <ul class="services">
+            <li><a href=""><i class="iconfont">&#xe601;</i>7天无理由</a><span>|</span></li>
+            <li><a href=""><i class="iconfont">&#xe60e;</i>维修</a><span>|</span></li>
+            <li><a href=""><i class="iconfont">&#xe7d9;</i>联系客服</a><span>|</span></li>
+            <li><a href=""><i class="iconfont">&#xe609;</i>包邮</a><span>|</span></li>
+            <li><a href=""><i class="iconfont">&#xe6ba;</i>网点</a></li>
+        </ul>
+    </div>
+    <div class="end">WEB前端大作业</div>
+</div>
+    
+    <script src="js/runtime.js"></script>
+    <script src="js/commom.js"></script>
+</body>
+</html>

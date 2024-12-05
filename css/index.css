@@ -1,0 +1,353 @@
+/* 全部分类菜单 */
+.indexbanner{
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+}
+.indexbanner ul{
+    width: 20000px;
+    height: 460px;
+}
+.indexbanner li{
+    width: 1206px;
+    height: 460px;
+    float: left;
+    position: relative;
+}
+
+.indexbanner .bannerlist li img{
+    width: 1206px;
+    height: 460px;
+}
+.indexbanner .bannerlist li a{
+    position: absolute;
+    width: 1206px;
+    height: 460px;
+    top: 0;
+    right: 0;
+}
+.indexbanner .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 40px;
+    height: 70px;
+    line-height: 70px;
+}
+.indexbanner .btn .iconfont{
+    font-size: 30px;
+    color: rgb(190, 185, 185);
+}
+.indexbanner .btn.prev{
+    left: 0px;
+}
+.indexbanner .btn.next{
+    right: 0;
+}
+.indexbanner .btn:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+.indexbanner .btn:hover .iconfont{
+    color: #fff;
+}
+.indexbanner .page{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    z-index: 50;
+    width: 100%;
+    height: 10px;
+    text-align: right;
+    padding-right: 35px;
+}
+.indexbanner .page a{
+    display: inline-block;
+    margin: 0 5px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.indexbanner .page span{
+    visibility: hidden;
+}
+.indexbanner .page a:hover{
+    background-color:rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+/* 菜单与广告 */
+.menus{
+    overflow: hidden;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.menus .menu{
+    width: 100%;
+    height: 55px;
+    background-color: #f5f5f5;
+    float: left;
+    padding: 10px;
+}
+.menus .menu li{
+    width: 135px;
+    height: 50px;
+    line-height: 30px;
+    float: left;
+    padding-top: 2px;
+    text-align: center;
+    margin-left: 85px;
+}
+.menus .menu li i{
+    font-size: 27px;
+    color:#5f5f50;
+}
+.menus .menu li span{
+    display: block;
+    margin-top: 2px;
+    color:#5f5f50;
+    font-size: 12px;
+    font-weight: bold;
+}
+.menus .menu li:hover i{
+    color: #ff6700;
+    font-size: 30px;
+}
+.menus .menu li:hover span{
+    color: #ff6700;
+}
+.allgoods{
+    width:100%;
+    background-color: #f5f5f5;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    position: relative;
+}
+.allgoods .title{
+    position: relative;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+.allgoods .name{
+    position: relative;
+    height: 60px;
+    font-size: 16px;
+    font-weight:bold;
+    line-height:58px;
+    color: #333;
+}
+.allgoods .title div{
+    height: 16px;
+    width: 24px;
+    position: absolute;
+    border: 1px solid #e0e0e0;
+    top: 30px;
+    right: 0;
+    text-align: center;
+    line-height: 14px;
+    padding: 3px 5px;
+}
+.allgoods .title .prev{
+    right: 36px;
+}
+.allgoods .title .iconfont{
+    font-size: 16px;
+    color: #999797;
+}
+.allgoods .title div:hover .iconfont{
+    color: #ff6700;
+}
+.allgoods .flashshopping{
+    height: 340px;
+    position: relative;
+}
+.allgoods .flashshopping .goods .time{
+    position: absolute;
+    height: 340px;
+    width: 234px;
+    text-align: center;
+    background-color:rgb(241, 237, 237);
+    border-top: 1px solid red;
+    left: 0;
+}
+.allgoods  li{
+    height: 300px;
+    width: 234px;
+    text-align: center;
+    background-color:#fff;
+    position: absolute;
+}
+
+.allgoods .flashshopping .goods .good1{
+    border-top: 1px solid #ff6700;
+    left: 243px;
+    height: 340px;
+}
+.allgoods .flashshopping .goods .good2{
+    border-top: 1px solid green;
+    left: 486px;
+    height: 340px;
+}
+.allgoods .flashshopping .goods .good3{
+    border-top: 1px solid blue;
+    left: 729px;
+    height: 340px;
+}
+.allgoods .flashshopping .goods .good4{
+    border-top: 1px solid red;
+    left: 972px;
+    height: 340px;
+}
+.allgoods  .flashshopping .goods li  img{
+    display: block;
+    height: 160px;
+    width: 160px;
+    margin: 22px 37px;
+    margin-top: 50px;
+}
+.allgoods  li p{
+    color: #ff6700;
+    font-size: 14px;
+    font-weight: bold;
+}
+.allgoods .flashshopping .goods .time h3{
+    margin-top: 50px;
+    font-size: 21px;
+    color: red;
+}
+.allgoods .flashshopping .goods .time img{
+    display: block;
+    height: 60px;
+    width: 40px;
+    margin: 25px 103px;
+}
+.allgoods .flashshopping .goods .time .runtime{
+    width: 234px;
+    height: 50px;
+    margin: 50px 15px;
+}
+.allgoods .flashshopping .goods .time .runtime .point{
+    display: block;
+    height:50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+}
+#hour,#minute,#second{
+    display: block;
+    float: left;
+    margin: 0 9px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(51, 49, 49);
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+.allgoods .ads{
+    overflow: hidden;
+    height: 120px;
+    width: 1206px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.allgoods .ads a{
+    display: block;
+    width: 100%;
+}
+
+.allgoods .title .more{
+    border: none;
+    height: 58px;
+    width: 92px;
+    line-height: 58px;
+    top:0;
+}
+.allgoods .phone{
+    height: 614px;
+    position: relative;
+}
+.allgoods .phone .firstphone{
+    display: block;
+    height: 614px;
+    width: 234px;
+    position: absolute;
+}
+.allgoods .phone .firstphone:hover{
+    margin-top: -3px;
+    box-shadow:  0 0 10px rgb(136, 136, 136);
+}
+.allgoods .display{
+    height: 614px;
+    width: 992px;
+    position: absolute;
+    left: 234px;
+}
+.allgoods .display li{
+    float: left;
+    position:static;
+    margin-left: 7px;
+    margin-bottom: 14px;
+}
+.allgoods .display img{
+    display: block;
+    height: 160px;
+    width: 160px;
+    margin: 22px 37px;
+}
+/* 为展示商品添加动态效果 */
+.allgoods .display li:hover{
+    position: relative;
+    top: -3px;
+    box-shadow:  0 0 10px rgb(199, 199, 199);
+}
+.allgoods .display li:hover img{
+    margin-top: 18px;
+    margin-left: 45px;
+}
+.allgoods .display li:hover .name{
+    line-height: 60px;
+}
+.allgoods .jiadian{
+    height: 614px;
+    position: relative;
+}
+.allgoods .zhineng{
+    height: 614px;
+    position: relative;
+}
+.allgoods .jiadians{
+    height: 614px;
+    width: 1206px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+}
+.allgoods .zhinengs{
+    height: 614px;
+    width: 1206px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+}
+@keyframes slide {
+    from{height: 0;}
+    to{height: 230px;}
+}
+@keyframes slide2 {
+    from{height: 0;}
+    to{height: 95px;}
+}
+@keyframes slide3 {
+    from{height: 0;}
+    to{height: 146px;}
+}

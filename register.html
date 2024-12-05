@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线商城-注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="home1.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="total">
+        <center>
+            <a href="index.html"><img src="img/home.png" alt="" class="logo"></a>
+            <div class="title">注册账号</div>
+            <form action="" class="form">
+                <label for="country"><span>国家：</span></label> 
+                <select name="" id="country">
+                    <option value="中国" selected>中国</option>
+                    <option value="美国">美国</option>
+                    <option value="日本">日本</option>
+                    <option value="法国">法国</option>
+                    <option value="德国">德国</option>
+                </select>
+                <label for="name"><span>用户名：</span></label>
+                <input type="text" name="" id="name" onfocus="displayName()" onblur="checkName()">
+                <div class="info " id="info1"></div>
+                <label for="password"><span>密码：</span></label>
+                <input type="password" name="" id="password" onfocus="displayPassword()"onblur="checkPassword()">
+                <div class="info" id="info2"></div>
+                <label for="phone"><span>手机号：</span></label>
+                <input type="text" name="" id="phone" onfocus="displayPhone()"onblur="checkPhone()">
+                <div class="info " id="info3"></div>
+                <label for="email"><span>邮箱地址：</span></label>
+                <input type="text" name="" id="email" onfocus="displayEmail()"onblur="checkEmail()"><br>
+                <div class="info " id="info4"></div>
+                <input type="submit" name="" id="submit">
+            </form> 
+        </center>
+    </div>
+    <script src="js/check.js"></script>
+</body>
+</html>

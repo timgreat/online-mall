@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="home1.ico" type="image/x-icon">
+    <title>在线商城-登录</title>
+</head>
+<body>
+    <div class="total">
+        <form action="javascript:;" class="login">
+            <div class="title">
+                <a href="javascript:;" id="zh" onclick="displayinfo(0)">账号登录</a>
+                <div class="line"></div>
+                <a href="javascript:;" id="sm" onclick="displayinfo(3)">扫码登录</a>
+            </div>
+            <center>
+                <div class="info" id="info">
+                    <input type="text" name="" id="name" placeholder="用户名" onfocus="displayName()" onblur="checkName()"><br>
+                    <div id="info1"></div>
+                    <input type="password" name="" id="password" placeholder="密码" onfocus="displayPassword()" onblur="checkPassword()"><br>
+                    <div id="info2"></div>
+                    <input type="submit" name="" id="submit" value="登录" onclick="test()"><br>
+                    <div class="regnow"><a href="register.html">立即注册</a> | <a href="javascript:;">忘记密码</a></div>
+                </div>
+                <div class="info3" id="info3">
+                    <div class="p">请使用手机扫描以下二维码</div>
+                    <div class="img"><img src="img/二维码图片.jpg" alt="二维码"></div>
+                    <div class="p">扫我登录</div>
+                </div>
+            </center>
+            
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/check.js"></script>
+</body>
+</html>
